@@ -1,0 +1,11 @@
+.table {
+  position: relative;
+  float: left;
+  width: 50%
+}
+
+.card {
+  position: relative;
+  float: right;
+  width: 50%
+}
