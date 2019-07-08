@@ -12,6 +12,7 @@ export namespace Components {
   interface ResultPage {
     'all_data': string;
     'complete_data': string;
+    'org_names': string;
   }
 }
 
@@ -32,6 +33,7 @@ declare namespace LocalJSX {
   interface ResultPage extends JSXBase.HTMLAttributes<HTMLResultPageElement> {
     'all_data'?: string;
     'complete_data'?: string;
+    'org_names'?: string;
   }
 
   interface IntrinsicElements {

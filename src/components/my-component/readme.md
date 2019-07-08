@@ -9,6 +9,7 @@
 
 | Property        | Attribute       | Description | Type     | Default     |
 | --------------- | --------------- | ----------- | -------- | ----------- |
+| `all_data`      | `all_data`      |             | `string` | `undefined` |
 | `complete_data` | `complete_data` |             | `string` | `undefined` |
 
 
@@ -16,13 +17,16 @@
 
 ### Depends on
 
-- radial-crispr
+- table-crispr
+- genomic-card
 
 ### Graph
 ```mermaid
 graph TD;
+  result-page --> table-crispr
+  result-page --> genomic-card
   table-crispr --> radial-crispr
-  style table-crispr fill:#f9f,stroke:#333,stroke-width:4px
+  style result-page fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

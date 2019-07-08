@@ -38,6 +38,7 @@
   socket.on('loadFile', (results) => {
     console.log("Fichier chargé et reçu");
     document.getElementsByTagName('result-page')[0].setAttribute('all_data', results);
+    document.getElementsByTagName('result-page')[0].setAttribute('org_names', "Buchnera aphidicola (Cinara tujafilina) GCF_000217635.1&Aliivibrio wodanis GCF_000953695.1");
   })
 </script>
 </html>
