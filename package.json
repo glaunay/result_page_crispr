@@ -17,8 +17,8 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "@mmsb/genomic-card": "0.0.7",
-    "@mmsb/table-crispr": "0.0.5",
+    "@mmsb/genomic-card": "0.0.9",
+    "@mmsb/table-crispr": "0.0.6",
     "bootstrap": "^4.3.1",
     "frappe-datatable": "^1.13.5",
     "fs": "0.0.1-security"
