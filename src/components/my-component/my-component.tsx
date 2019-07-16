@@ -42,23 +42,23 @@ export class MyComponent {
 }
 
 window.addEventListener("sgDataSection", () => {
-  let node = document.querySelector("body > result-page").shadowRoot.querySelector("linear-card");
+  let node = document.querySelector("result-page").shadowRoot.querySelector("linear-card");
   if(node == null){
     //@ts-ignore
     node = document.createElement("linear-card");
-    let resDiv = document.querySelector("body > result-page").shadowRoot.querySelector("#Result");
+    let resDiv = document.querySelector("result-page").shadowRoot.querySelector("#Result");
     resDiv.appendChild(node);
   } else{
     node.remove();
     node = document.createElement("linear-card");
-    let resDiv = document.querySelector("body > result-page").shadowRoot.querySelector("#Result");
+    let resDiv = document.querySelector("result-page").shadowRoot.querySelector("#Result");
     resDiv.appendChild(node);
 
 
   }
   console.log("Linear Card loading")
   node.setAttribute("width_bar", '90%');
-  node.setAttribute("width_div", (document.querySelector("body > result-page").shadowRoot.querySelector("#Result") as HTMLDivElement).getBoundingClientRect().width.toString());
+  node.setAttribute("width_div", (document.querySelector("result-page").shadowRoot.querySelector("#Result") as HTMLDivElement).getBoundingClientRect().width.toString());
   node.setAttribute("all_sgrna", event["detail"]["allSgrna"]);
   node.setAttribute("gene", event["detail"]["gene"]);
 })
