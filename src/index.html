@@ -6,6 +6,8 @@
   <title>Crispr Result Page</title>
   <script type="module" src="/build/mycomponent.esm.js"></script>
   <script nomodule src="/build/mycomponent.js"></script>
+
+  <!-- <script type="module" src="@mmsb/linear-card/dist/mycomponent.js"></script> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
 
@@ -38,8 +40,13 @@
 
   socket.on('loadFile', (results) => {
     console.log("Fichier chargé et reçu");
+    // console.log(results)
     document.getElementsByTagName('result-page')[0].setAttribute('all_data', results);
-    document.getElementsByTagName('result-page')[0].setAttribute('org_names', "Buchnera aphidicola (Cinara tujafilina) GCF_000217635.1&Aliivibrio wodanis GCF_000953695.1");
+    // document.getElementsByTagName('result-page')[0].setAttribute('org_names', "Buchnera aphidicola (Cinara tujafilina) GCF_000217635.1&Aliivibrio wodanis GCF_000953695.1");
+    document.getElementsByTagName('result-page')[0].setAttribute('org_names', "Enterobacter sp. 638 GCF_000016325.1&Candidatus Blochmannia vafer str. BVAF GCF_000185985.2");
+    document.getElementsByTagName('result-page')[0].setAttribute('org_names', "Enterobacter sp. 638 GCF_000016325.1&Candidatus Blochmannia vafer str. BVAF GCF_000185985.2");
+
   })
+
 </script>
 </html>
