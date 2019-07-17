@@ -19,7 +19,7 @@
   "dependencies": {
     "@mmsb/genomic-card": "^1.0.2",
     "@mmsb/linear-card": "0.0.8",
-    "@mmsb/table-crispr": "^1.0.1",
+    "@mmsb/table-crispr": "^1.0.2",
     "bootstrap": "^4.3.1",
     "frappe-datatable": "^1.13.5",
     "fs": "0.0.1-security"
