@@ -15,6 +15,7 @@ export class MyComponent {
   @Prop() all_data: string;
   @Prop() org_names: string;
   @Prop() gene: string;
+  @Prop() size: string;
 // *************************** LISTEN & EMIT ***************************
 
 
@@ -33,7 +34,7 @@ export class MyComponent {
       <table-crispr complete_data={this.complete_data}></table-crispr>
     </div>,
       <div class="card">
-      <genomic-card all_data={this.all_data} org_names={this.org_names} diagonal_svg={700} gene={this.gene}></genomic-card>
+      <genomic-card all_data={this.all_data} org_names={this.org_names} diagonal_svg={700} gene={this.gene} size={this.size}></genomic-card>
     </div>,
     <div id="Result">
    </div>

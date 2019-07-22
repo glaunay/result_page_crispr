@@ -14,6 +14,7 @@ export namespace Components {
     'complete_data': string;
     'gene': string;
     'org_names': string;
+    'size': string;
   }
 }
 
@@ -36,6 +37,7 @@ declare namespace LocalJSX {
     'complete_data'?: string;
     'gene'?: string;
     'org_names'?: string;
+    'size'?: string;
   }
 
   interface IntrinsicElements {
