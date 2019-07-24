@@ -13,6 +13,7 @@
 | `complete_data` | `complete_data` |             | `string` | `undefined` |
 | `gene`          | `gene`          |             | `string` | `undefined` |
 | `org_names`     | `org_names`     |             | `string` | `undefined` |
+| `size`          | `size`          |             | `string` | `undefined` |
 
 
 ## Dependencies
@@ -32,6 +33,7 @@ graph TD;
   result-page --> linear-card
   result-page --> linear-card
   table-crispr --> radial-crispr
+  genomic-card --> mmsb-select
   style result-page fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
